@@ -1,0 +1,16 @@
+package repeticao;
+
+public class ExemploWhile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String email = JoptionPane.showInputDialog("Email").toLowerCase();
+		while (email.indexOf("@"==-1) {
+			email JoptionPane.showInputDialog("Email deve ter @").toLowerCase();
+		}
+		System.out.println(email);
+
+	}
+
+}

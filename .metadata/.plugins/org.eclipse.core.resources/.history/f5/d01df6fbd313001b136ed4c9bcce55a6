@@ -1,0 +1,24 @@
+package br.com.casageral.modelo;
+
+public class Televisao {
+
+	private String marca;
+	private float valor;
+	private boolean status;
+	private int canal;
+	private int volume;
+
+
+	public void preencherMarca(String pMarca) {
+		marca=pMarca.toUpperCase();
+	}
+	public String retornarMarca() {
+		return marca;
+	}
+
+
+
+
+
+
+}

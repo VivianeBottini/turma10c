@@ -1,0 +1,12 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExemploWhile2 {
+
+	public static void main(String[] args) {
+		//peça o nome do usuário
+		
+	}
+
+}

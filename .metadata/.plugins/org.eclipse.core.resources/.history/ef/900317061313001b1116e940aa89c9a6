@@ -1,0 +1,12 @@
+package repeticao;
+
+public class Exercicio2 {
+
+	public static void main(String[] args) {
+		/* Crie um programa que pergunte ao usuário o seu nível de escolaridade (Médio, Superior ou Pós)
+		 * enquanto a resposta for válida, irá computando os totais dos níveis digitados,
+		 * no final apresente somente o nível que foi mais votado
+		 */
+	}
+
+}

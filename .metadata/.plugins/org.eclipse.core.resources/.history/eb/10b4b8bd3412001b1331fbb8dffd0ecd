@@ -1,0 +1,24 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class VendaProduto {
+
+	public static void main(String[] args) {
+		// Crie as varáveis para armazenar:
+		// nome do produto, codigo, valor e quantidade
+		// exiba o nome final do produto, o total e o total com 10% de desconto
+		
+		String produto = JOptionPane.showInputDialog("Digite o nome do produto");
+		int codigo = Integer.parseInt(JOptionPane.showInputDialog("Digite o código do produto"));
+		double valor = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor"));
+		int quantidade = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade")); 
+		double desconto = (valor*10) /100 ;
+		double total = quantidade * valor;
+		System.out.println("Produto...........: " + produto);
+		System.out.println("Total.............: " + (total));
+		System.out.println("Total com desconto: " + (total*0.9));
+				
+	}
+
+}

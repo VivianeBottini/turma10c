@@ -1,0 +1,32 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class VendaProduto {
+
+	public static void main(String[] args) {
+		// Crie as varáveis para armazenar:
+		// nome do produto, codigo, valor e quantidade
+		// exiba o nome final do produto, o total e o total com 10% de desconto
+		
+		/*
+		 * Parse => conversão entre tipos incompatíveis (String => primitivo)
+		 * Primitivo => são os tipos que fazem parte da linguagem (começam com letras minusculas)
+		 * Classe Wrapper => são classes que apoiam os tipos primitivos. Exemplo: parse().
+		 * int => Integer
+		 * double => Double
+		 */
+		
+		String produto = JOptionPane.showInputDialog("Digite o nome do produto");
+		int codigo = Integer.parseInt(JOptionPane.showInputDialog("Digite o código do produto"));
+		double valor = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor"));
+		int quantidade = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade")); 
+		double desconto = (valor*10) /100 ;
+		double total = quantidade * valor;
+		System.out.println("Produto...........: " + produto);
+		System.out.println("Total.............: " + (total));
+		System.out.println("Total com desconto: " + (total*0.9));
+				
+	}
+
+}

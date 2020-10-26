@@ -1,0 +1,38 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+				
+		/*Um jogo de advinhação
+		 *O jogador 1 digita um numero inteiro
+		 *O jogador 2 tem que advinhar o numero digitado pelo jogador 1
+		 *Enquanto ele não acertar o jogo continua perguntando o numero
+		 *
+		 *Etapa2
+		 *Acrescente a contagem de tentativas do jogador 2
+		 *Apresente quantas tentativas ele usou para acertar o numero
+		 *
+		 *Etapa3
+		 *Acrescente dicas para para o jogador 2 , indicando se o numero 
+		 *que ele esta tentando advinhar é maior ou menor que ele chutou
+		*/
+		
+
+		String candidato="";
+		int totalX=0;
+		int totalY=0;
+		do {
+			candidato = JOptionPane.showInputDialog("Digite <X> ou <Y>").toUpperCase();
+			if (candidato.equals("X")) {
+				totalX=totalX+1;
+			}else if (candidato.equals("Y")) {
+				totalY=totalY+1;
+			}
+		}while(candidato.equals("X") || candidato.equals("Y"));
+		System.out.println("Total do candidato X: " + totalX);
+		System.out.println("Total do candidato Y: " + totalY);
+	}
+}
